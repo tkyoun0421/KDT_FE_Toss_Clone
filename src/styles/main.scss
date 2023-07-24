@@ -1,0 +1,11 @@
+@import './abstracts/mixins'; // 믹스인
+@import './abstracts/variables'; // 변수
+
+@import './base/common'; // 공통
+@import './base/reset'; // 리셋
+@import './base/typography'; // 글꼴
+
+
+
+@import './layout/header'; // 헤더
+@import './layout/footer'; // 푸터
