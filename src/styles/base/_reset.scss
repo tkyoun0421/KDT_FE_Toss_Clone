@@ -43,3 +43,19 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+button {
+	cursor: pointer;
+	background-color: inherit;
+	border: 0px;
+}
+* {
+	box-sizing: border-box;
+}
+*:not(input):not(textarea) {
+	user-select: none;
+}

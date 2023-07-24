@@ -4,10 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>토스</title>
+    <!-- pretendard font -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
 </head>
-<body>
-    <h1>
-        <img src="./assets/logo.svg" id="logo" alt="토스" loading="lazy">
-    </h1>
+<body id="root">
+    <!-- header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1>
+                    <a href="javascript:void(0)">
+                        <img src="./assets/logo.svg" alt="Toss">
+                        <p class="blind">toss</p>
+                    </a>
+                </h1>
+            </div>
+            <nav>
+                <ul class="category">
+                    <li><a href="javascript:void(0)">회사 소개</a></li>
+                    <li><a href="javascript:void(0)">고객센터</a></li>
+                    <li><a href="javascript:void(0)">자주 묻는 질문</a></li>
+                    <li><a href="javascript:void(0)">토스인증서</a></li>
+                    <li><a href="javascript:void(0)">채용</a></li>
+                </ul>
+                <div class="translation">
+                    <a href="javascript:void(0)" class="btn-kor on">KOR</a>
+                    <span>|</span>
+                    <a href="javascript:void(0)" class="btn-eng">ENG</a>
+                </div>
+            </nav>
+            <div class="mobile-btn">
+                <a class="button--primary" href="javasciprt:void(0)" aria-label="앱 다운로드">앱 다운로드</a>
+                <button class="menu-bars" type="button" aria-label="메뉴바">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
