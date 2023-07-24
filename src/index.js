@@ -15,6 +15,16 @@ function onMenuBar (event) {
     }
 }
 
+window.addEventListener('scroll', function() {
+    if(window.scrollY !== 0) {
+        if(!headerEl.classList.contains('on')) {
+            headerEl.classList.add('scroll')
+        }
+    } else {
+        headerEl.classList.remove('scroll')
+    }
+})
+
 // 새로 고침시 맨 위로
 // window.onload = () => {
 //     setTimeout(() => {scrollTo(0,0)},100);
@@ -33,7 +43,7 @@ const sectionEls = [...document.querySelectorAll('.sec')]
 const option = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.5
+    threshold: 0.3
 }
 
 const callback = (entries, observer) => {

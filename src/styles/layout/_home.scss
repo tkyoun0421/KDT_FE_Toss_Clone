@@ -1,13 +1,20 @@
 .home {
     .container {
         padding: 25rem 0 16.5rem;
+        @include bp640 {
+            padding: 10rem 0;
+        }
         .inner {
             position: relative;
             width: 92%;
             margin: auto;
             height: 127.4rem;
             @include bp640 {
-                height: 58.7rem;
+                height: 100%;
+            }
+            .title-wrap {
+                opacity: 0;
+                @include showTopAni(0);
             }
             .content-wrap {
                 @include bp640 {
@@ -74,29 +81,14 @@
             .inner {
                 .content-wrap {
                     .cnt1 {
-                        animation: showTopAnimation;
-                        animation-duration: 1.5s;
-                        animation-delay: 0;
-                        animation-fill-mode: forwards;
-                        animation-timing-function: ease-in-out;
-                        animation-iteration-count: 1;
+                        @include showTopAni(1)
                     }
                     .cnt2 {
-                        animation: showTopAnimation;
-                        animation-duration: 1.5s;
-                        animation-delay: .5s;
-                        animation-fill-mode: forwards;
-                        animation-timing-function: ease-in-out;
-                        animation-iteration-count: 1;
+                        @include showTopAni(2)
                     }
                 }
                 .text-wrap {
-                    animation: showTopAnimation;
-                        animation-duration: 1.5s;
-                        animation-delay: 1s;
-                        animation-fill-mode: forwards;
-                        animation-timing-function: ease-in-out;
-                        animation-iteration-count: 1;
+                    @include showTopAni(3)
                 }
             }
         }

@@ -4,6 +4,7 @@
     width: 100%;
     height: 6rem;
     background-color: $white;
+    transition: height 1s ease;
     .container {
         height: 100%;
         width: 100%;
@@ -12,8 +13,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 92%;
-            margin: auto;
             @include bp640 {
                 width: 100%;
                 flex-direction: column;
@@ -136,6 +135,7 @@
         }
     }
     &.on {
+        height: 39.6rem;
         .container {
             .inner {
                 nav {
@@ -148,5 +148,8 @@
                 }
             }
         }
+    }
+    &.scroll {
+        border-bottom: 1px solid rgba(0, 27, 55, 0.1);
     }
 }
