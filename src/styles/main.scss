@@ -1,8 +1,8 @@
 @import './abstracts/mixins'; // 믹스인
 @import './abstracts/variables'; // 변수
+@import './abstracts/keyframes'; // 애니메이션
 
 @import './base/common'; // 공통
-@import './base/keyframes'; // 애니메이션
 @import './base/reset'; // 리셋
 @import './base/typography'; // 글꼴
 
@@ -11,4 +11,5 @@
 @import './layout/header'; // 헤더
 @import './layout/visual'; // 비쥬얼
 @import './layout/banner'; // 배너
+@import './layout/home'; // 홈
 @import './layout/footer'; // 푸터
