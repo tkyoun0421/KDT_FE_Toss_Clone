@@ -5,3 +5,10 @@ body {
 html {
     font-size: 10px;
 }
+
+br {
+    display: none;
+    @include bp640 {
+        display: inline;
+    }
+}
