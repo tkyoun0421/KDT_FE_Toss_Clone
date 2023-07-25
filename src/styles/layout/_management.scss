@@ -15,6 +15,7 @@
                     @include bp640 {
                         font-size: 3.6rem;
                         margin-bottom: 6.4rem;
+                        white-space: pre-line;
                     }
                 }
             }
@@ -108,11 +109,11 @@
                         margin-top: 12.2rem;
                         display: flex;
                         flex-direction: column;
-                        align-self: flex-end;
                         flex: 1;
                         @include bp640 {
                             margin-top: 5rem;
                             max-width: 24rem;
+                            align-self: flex-end;
                         }
                         .img-wrap {
                             margin-bottom: 3.5rem;
