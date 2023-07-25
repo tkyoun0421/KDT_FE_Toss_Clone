@@ -7,9 +7,9 @@ html {
 }
 
 br {
-    display: none;
+    display: inline;
     @include bp640 {
-        display: inline;
+        display: none;
     }
 }
 
@@ -41,8 +41,8 @@ br {
     font-weight: 600;
     color: rgba(51, 61, 75, 1);
     line-height: 1.5;
-    white-space: pre-line;
     @include bp640 {
+        white-space: pre-line;
         font-size: 1.7rem;
     }
 }

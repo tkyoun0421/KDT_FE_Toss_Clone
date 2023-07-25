@@ -7,7 +7,7 @@
         padding: 10rem 0;
     }
     p {
-        white-space: pre-line;
+        white-space: nomal;
         text-align: center;
         color: $black28;
         font-size: 3.2rem;
@@ -19,7 +19,7 @@
             font-weight: 600;
             line-height: 1.5;
             margin-bottom: 3rem;
-            white-space: normal;
+            white-space: pre-line;
         }
     }
 }

@@ -36,12 +36,12 @@
                 font-size: 6.6rem;
                 font-weight: 700;
                 text-align: center;
-                white-space: pre-line;
                 line-height: 1.4;
                 margin-bottom: 5rem;
                 @include bp640 {
                     font-size: 3.3rem;
-                    color: rgba(25, 31, 40, 1)
+                    color: rgba(25, 31, 40, 1);
+                    white-space: pre-line;
                 }
             }
             .btns {
