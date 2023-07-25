@@ -56,6 +56,3 @@ button {
 * {
 	box-sizing: border-box;
 }
-*:not(input):not(textarea) {
-	user-select: none;
-}
