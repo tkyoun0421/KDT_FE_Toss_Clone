@@ -57,9 +57,3 @@ const callback = (entries, observer) => {
 const observer = new IntersectionObserver(callback, option)
 sectionEls.forEach(item => observer.observe(item))
 
-// investment 섹션 스크롤 애니메이션
-const investmentEl = document.querySelector('.investment')
-window.addEventListener('scroll', function() {
-    if (window.scrollY) {
-    }
-})
