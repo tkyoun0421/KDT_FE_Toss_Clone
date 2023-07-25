@@ -29,7 +29,7 @@
                     margin: auto;
                     @include bp640 {
                         width: 100%;
-                        min-width: 37.5rem;
+                        max-width: 37.5rem;
                         height: auto;
                     }
                     .img-inner {
@@ -49,6 +49,9 @@
                         bottom: 12.4rem;
                         left: 50%;
                         transform: translateX(-50%);
+                        @include bp640 {
+                            bottom: 8.3rem;
+                        }
                         .img {
                             display: flex;
                             justify-content: space-between;
