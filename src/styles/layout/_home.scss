@@ -14,7 +14,7 @@
             }
             .title-wrap {
                 opacity: 0;
-                @include showTopAni(0);
+                @include showTopAni(1);
             }
             .content-wrap {
                 @include bp640 {
@@ -81,14 +81,14 @@
             .inner {
                 .content-wrap {
                     .cnt1 {
-                        @include showTopAni(1)
+                        @include showTopAni(2)
                     }
                     .cnt2 {
-                        @include showTopAni(2)
+                        @include showTopAni(3)
                     }
                 }
                 .text-wrap {
-                    @include showTopAni(3)
+                    @include showTopAni(4)
                 }
             }
         }
