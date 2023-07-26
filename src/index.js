@@ -51,9 +51,9 @@ function removeHeaderBorderBtm() {
 }
 
 // 새로고침시 스크롤 맨 위로 이동
-window.onload = () => {
-    setTimeout(() => {scrollTo(0,0)},100);
-}
+// window.onload = () => {
+//     setTimeout(() => {scrollTo(0,0)},100);
+// }
 
 // 
 const sectionEls = [...document.querySelectorAll('.sec')]

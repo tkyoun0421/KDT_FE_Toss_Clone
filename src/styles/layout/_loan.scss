@@ -92,9 +92,6 @@
                 }
                 .disc {
                     opacity: 0;
-                    @include bp640 {
-                        white-space: normal;
-                    }
                 }
             }
         }

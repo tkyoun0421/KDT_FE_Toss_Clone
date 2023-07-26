@@ -27,3 +27,21 @@ img {
 html,body {
     overflow-x: hidden;
 }
+
+br {
+    &.pc {
+        display: inline;
+        @include bp640 {
+            display: none;
+        }
+    }
+    &.mb {
+        display: none;
+        @include bp640 {
+            display: inline;
+        }
+    }
+    &.both {
+        display: inline;
+    }
+}
