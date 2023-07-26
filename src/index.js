@@ -25,7 +25,9 @@ function onMenuBar (event) {
 
 // 스크롤다운 시 header border-bottom 추가
 window.addEventListener('scroll', function() {
-    if(window.scrollY !== 0) {
+    const CHECK_SCROLL_DOWN = 0
+
+    if(window.scrollY !== CHECK_SCROLL_DOWN) {
         if(!headerEl.classList.contains('on')) {
             addHeaderBorderBtm()
         }
@@ -75,27 +77,32 @@ const scrEls = [...document.querySelectorAll('.scr')]
 // 투자영역 스크롤 애니메이션
 function investmentScrollAni() {
     const percent = Math.floor(window.scrollY / investmentEl.getBoundingClientRect().bottom);
+    const FIRST_CHECK_POINT = 5
+    const SECOND_CHECK_POINT = 6
+    const THIRD_CHECK_POINT = 7
+    const COMPLETED = 1
+    const READY = 0
 
-    if (percent >= 5) {
-        scrEls[2].style.opacity = 1
-        scrEls[4].style.opacity = 1
+    if (percent >= FIRST_CHECK_POINT) {
+        scrEls[2].style.opacity = COMPLETED
+        scrEls[4].style.opacity = COMPLETED
     } else {
-        scrEls[2].style.opacity = 0
-        scrEls[4].style.opacity = 0
+        scrEls[2].style.opacity = READY
+        scrEls[4].style.opacity = READY
     }
-    if (percent >= 6) {
-        scrEls[1].style.opacity = 1
-        scrEls[5].style.opacity = 1
+    if (percent >= SECOND_CHECK_POINT) {
+        scrEls[1].style.opacity = COMPLETED
+        scrEls[5].style.opacity = COMPLETED
     } else {
-        scrEls[1].style.opacity = 0
-        scrEls[5].style.opacity = 0
+        scrEls[1].style.opacity = READY
+        scrEls[5].style.opacity = READY
     }
-    if (percent >= 7) {
-        scrEls[0].style.opacity = 1
-        scrEls[6].style.opacity = 1
+    if (percent >= THIRD_CHECK_POINT) {
+        scrEls[0].style.opacity = COMPLETED
+        scrEls[6].style.opacity = COMPLETED
     } else {
-        scrEls[0].style.opacity = 0
-        scrEls[6].style.opacity = 0
+        scrEls[0].style.opacity = READY
+        scrEls[6].style.opacity = READY
     }
 }
 
