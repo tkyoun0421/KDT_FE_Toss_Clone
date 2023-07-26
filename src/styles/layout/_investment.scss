@@ -49,6 +49,13 @@
                         bottom: 12.4rem;
                         left: 50%;
                         transform: translateX(-50%);
+                        .scr {
+                            opacity: 0;
+                            transition: .5s;
+                        }
+                        .scr-0 {
+                            opacity: 1;
+                        }
                         @include bp640 {
                             bottom: 8.3rem;
                         }
