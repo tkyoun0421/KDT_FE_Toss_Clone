@@ -60,7 +60,7 @@ const sectionOption = {
     threshold: 0.3
 }
 
-const sectionCallback = (entries, observer) => {
+const sectionCallback = (entries) => {
     entries.forEach(entry => {
         if(entry.isIntersecting) {
             entry.target.classList.add('on')
